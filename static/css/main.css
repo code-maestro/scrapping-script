@@ -1,0 +1,87 @@
+:root {
+  --font-sm: 12px;
+  --font-md: 18px;
+  --bg-color: #7c6767;
+  --lite-bg-color: #c2a0a0d3;
+  --txt-color: rgb(14, 13, 13);
+  --lite-txt-color: rgb(53, 48, 48);
+}
+
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+header {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+header h1 {
+  margin: 0 0 1rem 8rem;
+}
+
+header div,
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin-left: 7rem;
+  width: 1000px;
+}
+
+header div:hover {
+  cursor: pointer;
+}
+
+header div span,
+header div p {
+  margin: 0 0 1rem 1rem;
+}
+
+.overview {
+  border-radius: .5rem;
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+.overview a {
+  padding: 0 0.5rem;
+}
+
+nav ul li {
+  padding: .2rem;
+  margin: 0 0 .5rem 1rem;
+  border: 0px;
+  align-items: stretch;
+  background-color: var(--lite-bg-color);
+}
+
+.overview:hover,
+.overview:focus {
+  cursor: pointer;
+  border: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+select::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+select::-webkit-scrollbar-track {
+  background: var(--lite-bg-color);
+}
+
+select::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: var(--lite-txt-color);
+}
